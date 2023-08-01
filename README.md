@@ -22,12 +22,25 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Nest.js Project Structure
+## Lesson 1 summary: Nest.js Project Structure
 
-- application starting point is the main.ts file that bootstraps the application
+- Application starting point is the main.ts file that bootstraps the application
 - Nest apps consists of modules, always having at least 1 main module, by default called the AppModule
 - The module is a comprised of controllers, services, entities and other smallar building blocks
 - Modules are defined in their own module files, and the class decorator @Module us used to describe them
+
+## Lesson 2 summary: Routes and Controller
+
+- routes --> GET /events
+  POST /events
+  GET /events/:id
+- --> Controller - matches a route and execute code
+- Controller can use --> Service clasess, repositories etc and returns response data in JSON for API
+
+* Application starting point is the main.ts file that bootstraps the application
+* Nest apps consists of modules, always having at least 1 main module, by default called the AppModule
+* The module is a comprised of controllers, services, entities and other smallar building blocks
+* Modules are defined in their own module files, and the class decorator @Module us used to describe them
 
 ## Description
 
