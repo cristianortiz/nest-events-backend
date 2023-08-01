@@ -32,10 +32,12 @@
 ## Lesson 2 summary: Routes and Controller
 
 - routes --> GET /events
-  ** POST /events
-  ** GET /events/:id
-  ** --> Controller - matches a route and execute code
-  ** Controller can use --> Service clasess, repositories etc and returns response data in JSON for API
+  - POST /events
+  - GET /events/:id
+  - --> Controller - matches a route and execute code
+- Controller can use -->
+  - Service clasess, repositories etc
+  - Returns response data in JSON for API
 
 ## Description
 
