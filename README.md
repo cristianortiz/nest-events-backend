@@ -32,15 +32,10 @@
 ## Lesson 2 summary: Routes and Controller
 
 - routes --> GET /events
-  POST /events
-  GET /events/:id
-- --> Controller - matches a route and execute code
-- Controller can use --> Service clasess, repositories etc and returns response data in JSON for API
-
-* Application starting point is the main.ts file that bootstraps the application
-* Nest apps consists of modules, always having at least 1 main module, by default called the AppModule
-* The module is a comprised of controllers, services, entities and other smallar building blocks
-* Modules are defined in their own module files, and the class decorator @Module us used to describe them
+  ** POST /events
+  ** GET /events/:id
+  ** --> Controller - matches a route and execute code
+  ** Controller can use --> Service clasess, repositories etc and returns response data in JSON for API
 
 ## Description
 
