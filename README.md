@@ -36,8 +36,23 @@
   - GET /events/:id
   - --> Controller - matches a route and execute code
 - Controller can use -->
+
   - Service clasess, repositories etc
   - Returns response data in JSON for API
+
+- Controllers:
+  - Requests are handled by controlers, that are classes, having methods called actions
+  - controller class is decorated with @Controller dec, which can be used to specify a path prefix
+  - HTTP verb decorator like @Get or @Post are used to specify actions, the HTPP verb of the action and the path
+  - Response should be returned from the controller action methodls
+
+## Lesson 3 summary: Controllers
+
+- build small controlers, around resources
+- try to keep every controller thin and having at most 5 basic CRUD ops
+- if there is a need for more action add a new resource (DB table for example)
+- Use decs like @Get @Post to specify the HTTP verb and path for the ops
+- call the actions by a descriptive name, having CRUD controllers allows you to use the same names in every controller
 
 ## Description
 
