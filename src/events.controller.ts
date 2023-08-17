@@ -7,6 +7,7 @@ import {
   Param,
   Body,
   HttpCode,
+  ValidationPipe,
 } from '@nestjs/common';
 import { CreateEventDto } from './create-event.dto';
 import { UpdateEventDto } from './update-event.dto';
@@ -21,9 +22,6 @@ export class EventsController {
     @InjectRepository(Event)
     private readonly repository: Repository<Event>,
   ) {}
-  //array of events
-
-  //just for ilustration purpose in memory data
 
   @Get()
   async findAll() {
@@ -48,7 +46,7 @@ export class EventsController {
   @Patch(':id')
   async update(@Param(':id') id, @Body() input: UpdateEventDto) {
     //first find out if requested id resource is existing
-    const event = await this.repository.findOneBy(id);
+    const event = await this.repository.findOneBy({ id: id });
     return await this.repository.save({
       ...event,
       ...input,
